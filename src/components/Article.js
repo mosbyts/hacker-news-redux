@@ -9,7 +9,7 @@ const { title, url, author, num_comments } = article;
   return (
     <div className='Article'>
       <span style={{ width: columns.title.width }}>
-        <a href={url} target="_blank">{title}</a>
+        <a href={url} target="_blank" rel="noopener noreferrer">{title}</a>
       </span>
       <span style={{ width: columns.author.width }}>{author}</span>
       <span style={{ width: columns.comments.width }}>{num_comments}</span>
